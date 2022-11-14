@@ -50,5 +50,5 @@ app.post('/add', addData);
 function addData(req, res) {
     console.log(req.body); // Show received data in the console (for debugging purposes)
     projectData = req.body;
-    res.send(projectData);
+    res.send('Sent data');
 }
