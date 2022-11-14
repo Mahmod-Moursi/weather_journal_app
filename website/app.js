@@ -4,7 +4,7 @@ let newDate = d.getMonth()+1 +'.'+ d.getDate()+'.'+ d.getFullYear(); // Added a 
 
 // Personal API Key for OpenWeatherMap API
 let baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
-let apiKey = '&appid=743dfdd39fde958688d73ca5f35a4301&units=metric'; // Note that adding '&units=metric' after the api code makes the returned temperature in celsius 
+const apiKey = '&appid=743dfdd39fde958688d73ca5f35a4301&units=metric'; // Note that adding '&units=metric' after the api code makes the returned temperature in celsius 
 
 // Event listener to add function to an existing HTML DOM element
 document.getElementById('generate').addEventListener('click',performAction);
