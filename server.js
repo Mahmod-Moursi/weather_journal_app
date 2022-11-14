@@ -1,5 +1,5 @@
-// Setup empty JS array to act as endpoint for all routes, it's to store the data from the client-side
-projectData = [];
+// Setup empty JS object to act as endpoint for all routes, it's to store the data from the client-side
+projectData = {};
 
 // Require Express to run server and routes
 const express = require('express');
@@ -41,7 +41,7 @@ app.get('/all', sendData);
 // The callback function to GET 'all'
 function sendData(req, res) {
 	res.send(projectData);
-    projectData = []; // Clear the project data after each process to be replaced later on
+    projectData = {}; // Clear the project data after each process to be replaced later on
 }
 
 // POST route, which sends data to the server
